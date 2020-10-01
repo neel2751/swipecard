@@ -1,0 +1,194 @@
+@media screen and (max-width: 479px) {
+  .slider {
+    overflow: hidden;
+    margin-top: 2.5rem;
+  }
+  .slider .slide {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider .slide .change {
+    width: 255px;
+  }
+  .left {
+    display: flex;
+    text-align: center;
+  }
+  .slider .slide h1 {
+    font-size: 1.5rem;
+    width: 255px;
+    font-family: poppins;
+    color: #444444;
+  }
+  /* .right {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(70vmin + 5rem);
+    user-select: none;
+  } */
+  .right {
+    position: relative;
+  }
+  .shuffle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shuffle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shuffle3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shuffle4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shuffle5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    height: 250px;
+  }
+  .swipe_img1 {
+    /* transform: rotate(0deg); */
+    z-index: 4;
+    position: absolute;
+    transform: rotateX(5deg);
+  }
+  .swipe_img2 {
+    /* transform: rotate(-5deg); */
+    z-index: 3;
+    position: absolute;
+    /* transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(-3.0421deg); */
+    transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(6.9579deg);
+    /* transform: translate3d(1863px, 0px, 0px); */
+  }
+  .swipe_img3 {
+    /* transform: rotate(10deg); */
+    position: absolute;
+    z-index: 2;
+    transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(-10.0421deg);
+  }
+  .swipe_img4 {
+    z-index: 1;
+    position: absolute;
+    transition: transform 1s ease-out;
+  }
+  .swipe_img5 {
+    z-index: 0;
+    transition: transform 1.2s ease-out;
+
+    /* transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(-10.0421deg); */
+  }
+  .card_stack_module_card {
+    display: flex;
+    justify-content: center;
+  }
+  /* .card_stack_module_card .swipe_img5 {
+    transform: scale(1);
+  } */
+}
+
+@media screen and (min-width: 1024px) {
+  .slider {
+    overflow: hidden;
+    margin-top: 2.5rem;
+  }
+  .slider .slide {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider .slide .change {
+    width: 300px;
+  }
+  .left {
+    display: flex;
+    text-align: center;
+  }
+  .slider .slide h1 {
+    font-size: 2rem;
+    width: 255px;
+    font-family: poppins;
+    color: #444444;
+  }
+  .right {
+    position: relative;
+  }
+  .shuffle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shuffle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shuffle3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shuffle4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shuffle5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    height: 350px;
+  }
+  .swipe_img1 {
+    /* transform: rotate(0deg); */
+    z-index: 4;
+    position: absolute;
+    transform: rotateX(5deg);
+  }
+  .swipe_img2 {
+    /* transform: rotate(-5deg); */
+    z-index: 3;
+    position: absolute;
+    /* transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(-3.0421deg); */
+    transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(6.9579deg);
+    /* transform: translate3d(1863px, 0px, 0px); */
+  }
+  .swipe_img3 {
+    /* transform: rotate(10deg); */
+    position: absolute;
+    z-index: 2;
+    transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(-10.0421deg);
+  }
+  .swipe_img4 {
+    z-index: 1;
+    position: absolute;
+    transition: transform 1s ease-out;
+  }
+  .swipe_img5 {
+    z-index: 0;
+    transition: transform 1.2s ease-out;
+
+    /* transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(-10.0421deg); */
+  }
+  .card_stack_module_card {
+    display: flex;
+    justify-content: center;
+  }
+}

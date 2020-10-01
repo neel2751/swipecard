@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap");
+
+* {
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  transition: all 1s ease;
+}
+.slider {
+  overflow: hidden;
+  margin-top: 5rem;
+}
+.slider .slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.slider .slide h1 {
+  font-size: 3.5rem;
+  font-family: poppins;
+  color: #444444;
+}
+/* .swipe_img {
+  transform: rotate(5deg);
+} */
+.right {
+  position: relative;
+}
+.swipe_img1 {
+  /* transform: rotate(0deg); */
+  z-index: 4;
+  position: absolute;
+  transform: rotateX(5deg) scale(1);
+}
+.swipe_img2 {
+  /* transform: rotate(-5deg); */
+  z-index: 3;
+  position: absolute;
+  /* transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(-3.0421deg); */
+  transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(6.9579deg);
+  /* transform: translate3d(1863px, 0px, 0px); */
+}
+.swipe_img3 {
+  /* transform: rotate(10deg); */
+  position: absolute;
+  z-index: 2;
+  transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(-10.0421deg);
+}
+.swipe_img4 {
+  z-index: 1;
+  position: absolute;
+  transition: transform 1s ease-out;
+}
+.swipe_img5 {
+  z-index: 0;
+  transition: transform 1.2s ease-out;
+
+  /* transform: rotateX(5deg) rotateY(4.19579deg) rotateZ(-10.0421deg); */
+}
+.right:hover {
+  cursor: grab;
+}
+.header_design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 0 0;
+}
+.header_design .header_text_design {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007180;
+  font-family: poppins;
+  transition: all 1.2s ease-out;
+}
+.active {
+  animation: fadeIn 3s forwards;
+}
+.slider .slide .change {
+  width: 500px;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+.actives {
+  animation: fadeIn1 3s forwards;
+}
+@keyframes fadeIn1 {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+/* .change {
+  transition: all 5s ease;
+} */
