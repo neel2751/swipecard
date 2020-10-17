@@ -212,20 +212,23 @@ setInterval(mainChange, 25020);
 
 var shuffleCard = document.querySelector(".shufflecard");
 
-// shuffleCard.addEventListener("click", () => {
-//   var shuffleImg1 = document.getElementsByClassName("shuffle1");
-//   var shuffleImg2 = document.getElementsByClassName("shuffle2");
-//   var shuffleImg3 = document.getElementsByClassName("shuffle3");
+shuffleCard.addEventListener("click", () => {
+  var shuffleImg1 = document.getElementsByClassName("shuff");
+  // console.log(shuffleImg1.src.split("/").pop().split(".")[0]);
+  for (let a = 0; a < shuffleImg1.length; a++) {
+    // console.log("It's Work");
+    var set = shuffleImg1[a].src.split("/").pop().split(".")[0];
+    var shuffleArray = set;
+    for (let i = shuffleArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = shuffleArray[i];
+      shuffleArray[i] = shuffleArray[j];
+      shuffleArray[j] = temp;
+    }
+    console.log(shuffleArray);
+  }
 
-//   const shuffleArray = [shuffleImg1, shuffleImg2, shuffleImg3];
-//   // const s1 = shuffleArray.sort((a, b) => 0.5 - Math.random());
-
-//   for (let i = shuffleArray.length - 1; i > 0; i--) {
-//     const j = Math.floor(Math.random() * (i + 1));
-//     const temp = shuffleArray[i];
-//     shuffleArray[i] = shuffleArray[j];
-//     shuffleArray[j] = temp;
-//   }
-//   return shuffleArray;
-// });
+  // const shuffleArray = [1, 2, 3];
+  // const s1 = shuffleArray.sort((a, b) => 0.5 - Math.random());
+});
 // Consolas, 'Courier New', monospace  font Family of current vs code editor
